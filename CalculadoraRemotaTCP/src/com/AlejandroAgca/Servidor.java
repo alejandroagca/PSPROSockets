@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Servidor {
 
-	static final int PUERTO = 8888;
+static final int PUERTO = 8888;
 	
 	public Servidor() {
 		ServerSocket skSRV;
@@ -18,7 +18,7 @@ public class Servidor {
 				Socket skAtencion = skSRV.accept();
 				nCli++;
 				System.out.println("Estoy atendiendo al nuevo cliente: " + nCli);
-				//Creamos un hilo para atender al cliente y asi liberar al socket principal
+				
 				new ServidorHilo(skAtencion, nCli).start();
 			}
 			
@@ -31,4 +31,5 @@ public class Servidor {
 	public static void main(String[] args) {
 		new Servidor();
 	}
+
 }
