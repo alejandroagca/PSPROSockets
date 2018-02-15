@@ -57,6 +57,8 @@ public class ServidorHilo extends Thread {
 			e.printStackTrace();
 		} catch(NumberFormatException e) {
 			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 	
@@ -86,7 +88,7 @@ public class ServidorHilo extends Thread {
 	}
 	
 	private boolean esPrimo(int candidato) {
-		for (int i = 2; i < candidato; i++) {
+		for (int i = 2; i < candidato/2; i++) {
 			if (candidato%i == 0) {
 				return false;
 			}
