@@ -31,4 +31,6 @@ Protocolo de comunicacion:
 -   Capa de transporte: Lleva a cabo la transferencia libre de errores de los datos entre el emisor y el receptor. Mantiene el flujo de la red.
 -   Capa de aplicacion:  Accede a los servicios de las demás capas y define los protocolos que utilizan para intercambiar datos.
 
+Socket:
+Es el mecanismo de comunicación basico para realizar transferencia de informacion entre aplicaciones. Representa el extremo de un canal d comunicacion establecido entre un emsior y un receptor. Un socet esta compuesto por una IP y un Puerto.
 

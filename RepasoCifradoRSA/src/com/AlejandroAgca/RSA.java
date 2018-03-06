@@ -1,5 +1,6 @@
 package com.AlejandroAgca;
 
+import java.rmi.server.UnicastRemoteObject;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.util.Base64;
@@ -28,8 +29,7 @@ public class RSA {
 			Cipher encriptador = Cipher.getInstance("RSA");
 			encriptador.init(Cipher.ENCRYPT_MODE, claves.getPublic());
 			byte [] cifradoEnBytes = Base64.getEncoder().encode(encriptador.doFinal(MENSAJE.getBytes("utf-8")));
-			return new String(cifradoEnBytes);
-			
+			return new String(cifradoEnBytes);			
 	}
 	
 	public static String desencriptar(String mensaje, KeyPair claves) throws Exception {
