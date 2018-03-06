@@ -7,7 +7,7 @@ import java.rmi.registry.Registry;
 
 public class CalculadoraCliente {
 
-	public static final String servidor = "192.168.2.40";
+	public static final String servidor = "localhost";
 	public static final int puerto = 8889;
 
 	public static void main(String[] args) throws RemoteException {

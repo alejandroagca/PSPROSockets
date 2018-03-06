@@ -39,7 +39,7 @@ public class CirculoServidor implements ICirculo {
 	public static void main(String[] args) throws RemoteException {
 		final int puerto = 8888;
 		
-		System.setProperty("java.rmi.server.hostname", "192.168.2.40"); // pasar a la maquina de java
+		System.setProperty("java.rmi.server.hostname", "localhost"); // pasar a la maquina de java
 		System.setProperty("java.net.preferIPv4Stack", "true");
 		
 		Registry registry = LocateRegistry.createRegistry(puerto);

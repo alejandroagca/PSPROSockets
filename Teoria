@@ -1,0 +1,34 @@
+Autoridad certificadora:
+Es una entidad de confianza, responsable de emitir y revocar certificados, utilizando en ellos la firma electrónica, para lo cual se emplea la criptografía asimetrica.
+
+Cifrado simetrico:
+Es un método criptográfico en el cual se usa una misma clave para cifrar y descifrar mensajes en el emisor y el receptor
+
+Cifrado asimetrico:
+Es el método criptográfico que usa un par de claves diferentes para cifrar y descifrar los mensajes. Para cifrar utiliza la clave publica y para descrifrar la clave privada.
+
+
+Firma electronica:
+La firma electrónica es un conjunto de datos electrónicos que acompañan a un documento electrónico y cuyas funciones básicas son:
+-   Identificar al firmante
+-   Asegura que el documento firmado es exactamente el mismo que el original.
+La firma electronica es mas segura que la firma manual, puesto que los datos utilizados para realizar la firma son unicos e inconfundibles.
+
+Certificado digital:
+Es un documento electrónico firmado electrónicamente por una entidad certificadora que acredita la identidad del titular y asocia dicha entidad con un par de claves, una pública y otra privada.
+
+Protocolo UDP:
+UDP es un protocolo no orientado a conexión. El flujo es unidireccional. La transferencia de datos es realizada sin haber realizado previamente una conexión con la maquina de destino y el destinatario recibirá los datos sin enviar una confirmación al emisor. Es mas rapido pero menos seguro que TCP.
+
+Procotolo TCP:
+El protocolo TCP está orientado a conexión. Cuando una máquina envía datos a otra maquina, esta es informada de la llegada de datos, y confirma su buena recepción. Es mas seguro pero mas lento que UDP.
+
+
+Protocolo de comunicacion:
+-   Capa fisica:  Transformaciones que se le hacen a la secuencia de bits para trasmitirlos de un lugar a otro
+-   Capa de enlace de datos: Es responsable de la transferencia fiable de información a través de un circuito de transmisión de datos. Recibe peticiones de la capa de  red y utiliza los servicios de la capa física
+-   Capa de red: Proporciona conectividad y selección de ruta entre dos hosts que pueden estar ubicados en redes geográficamente distintas. 
+-   Capa de transporte: Lleva a cabo la transferencia libre de errores de los datos entre el emisor y el receptor. Mantiene el flujo de la red.
+-   Capa de aplicacion:  Accede a los servicios de las demás capas y define los protocolos que utilizan para intercambiar datos.
+
+

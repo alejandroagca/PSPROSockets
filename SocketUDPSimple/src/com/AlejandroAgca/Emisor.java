@@ -9,9 +9,10 @@ import java.net.UnknownHostException;
 
 public class Emisor{
 	
-	public static final int PuertoEmisor = 5555;
-	public static final int PuertoReceptor = 4444;
-	public static String IPReceptor = "192.168.3.57";
+	static final int PuertoEmisor = 5555;
+	static final int PuertoReceptor = 4444;
+	static final String IPReceptor = "localhost";
+	static final String IPEmisor = "0.0.0.0";
 	
 	public Emisor() {
 		DatagramSocket emisor;
@@ -24,7 +25,7 @@ public class Emisor{
 		String mensaje = "Alejandro Aguilar";
 		
 		try {
-			IPLocal = InetAddress.getByName("0.0.0.0");
+			IPLocal = InetAddress.getByName(IPEmisor);
 			IPRemota = InetAddress.getByName(IPReceptor);
 			
 			emisor = new DatagramSocket(PuertoEmisor, IPLocal); // Por donde sale el mensaje

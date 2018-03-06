@@ -1,0 +1,8 @@
+keytool -genkeypar -keystore almacenSRV -alias servidor -keyalg RSA -validity 90 -storetype pkcs12
+keytool -genkeypar -keystore amlacenCLI -alias cliente -keyalg RSA -validity 90 -storetype pkcs12
+
+keytool -export -keystore almacenSRV -alias servidor -file servidor.cer
+keytool -export -keystore almacenCLI -alias cliente -file cliente.cer
+
+keytool -import -keysotre almacenSRV -file cliente.cer
+keytool -import -keystore almacenCLI -file servidor.cer

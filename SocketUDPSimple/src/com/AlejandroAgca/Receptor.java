@@ -12,14 +12,11 @@ public class Receptor {
 
 		public static final int PUERTO = 4444;
 		public static final String IPEmisor = "0.0.0.0";
-		DatagramSocket socket;
 
-		
+		DatagramSocket socket;
 		public Receptor() {
 			try {
 				socket =  new DatagramSocket(PUERTO, InetAddress.getByName(IPEmisor));
-				
-				
 				System.out.println("Emisor conectado al socket: " + socket.getLocalAddress());
 				
 				while (true) {
@@ -29,10 +26,11 @@ public class Receptor {
 					System.out.println("Recibido un paquete de: " + dato.getAddress().getHostName());
 					
 					byte [] contenido = dato.getData();
-					System.out.println("de longitud: " + dato.getLength());
+					System.out.println("Longitud: " + dato.getLength());
 					
 					//Deserializamos a string
 					System.out.println(new String(contenido));
+					
 					
 				}
 			} catch (SocketException e) {
